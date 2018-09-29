@@ -1,0 +1,149 @@
+.outline {
+  outline: 1px solid red;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+  
+html {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #000000;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+  
+.visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"] {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.layout-positioner {
+  width: 600px;
+  margin-right: 122px;
+}
+
+
+/* -------- Header -------- */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+  margin-bottom: 90px;
+  background-color: #18182d;
+}
+
+.instructor-icon {
+  margin: 45px 0 49px 90px;
+}
+
+.settings-icon {
+  margin: 55px 74px 93px 0;
+}
+
+/* -------- Main content -------- */
+
+.page-main {
+  width: 722px;
+  margin: 0 auto;
+  margin-bottom: 113px;
+  border-bottom: solid 2px #2e2e50;
+}
+
+.description {
+  padding:0;
+}
+
+.description__header {
+  margin-bottom:40px;
+  font-size: 39px;
+  font-weight: 700;
+}
+
+.description__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.description__text:last-child {
+  margin-bottom: 90px;
+}
+
+.quote {
+  position: relative;
+  margin-bottom: 40px;
+  border: solid 2px #ffffff;
+}
+
+.quote::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  width: 48px;
+  height: 33px;
+  background: url("images/quote-sign.svg") no-repeat;
+}
+
+.quote__text {
+  margin: 0;
+  padding: 64px 58px 48px 91px;
+  padding-left: 91px;
+  padding-right: 58px;
+}
+
+.quote__source {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 120px;
+  min-height: 170px;
+  padding-top: 97px;
+  background: #000000;
+  background-repeat: no-repeat;
+  background-position: 50% 17px;
+}
+
+.quote__source--mickey {
+  background-image: url("images/mickey-rourke.png");
+}
+
+.quote__author-job {
+  font-size: 14px;
+  color: #525252;
+}
