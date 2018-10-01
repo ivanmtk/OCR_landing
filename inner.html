@@ -7,7 +7,7 @@
   <title>Ощути себя героем Арены</title>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body>
@@ -15,13 +15,13 @@
     <header class="page-header">
       <div class="page-header__container">
         <div class="page-header_menu--left">
-          <a class="page-header__link">
+          <a class="page-header__link" href="#">
             <span class="visually-hidden">Инструктор</span>
             <span class="instructor-icon"></span>
           </a>
         </div>
         <div class="page-header_menu--right">
-          <a class="page-header__link">
+          <a class="page-header__link" href="#">
             <span class="visually-hidden">Настройки</span>
             <span class="settings-icon"></span>
           </a>
@@ -36,7 +36,7 @@
             <a class="main-nav__link" href="#">Спорт</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">OCR</a>
+            <a class="main-nav__link" href="index.html">OCR</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Забег</a>
@@ -46,8 +46,8 @@
 
       <section class="intro layout-positioner">
         <h1 class="intro__title">Ощутить себя героем OCR сможет каждый</h1>
-        <p class="intro__description">Тебя ждут уникальные препятствия, разработанные специально для Арены Героев
-          опытными инженерами Лиги Героев!</p>
+        <p class="intro__description">Тебя ждут уникальные препятствия, разработанные специально для Арены Героев опытными 
+          инженерами Лиги Героев!</p>
       </section>
 
       <section class="motivation">
@@ -58,6 +58,7 @@
         <div class="motivation__image motivation__image--running-man"></div>
         <img class="visually-hidden" src="images/posing-girl-desktop.png" width="329" height="419" alt="Фото позирующей девушки">
         <div class="motivation__image motivation__image--posing-girl"></div>
+        <div class="motivation__image--black-mask"></div>
       </section>
 
       <section class="variants">
@@ -65,15 +66,13 @@
         <ul class="variants__list">
           <li class="variants__item">
             <h3 class="variants__title">Тренировка</h3>
-            <p class="variants__description">Проверь свои силы и навыки на 5 препятствиях
-              Арены. У тебя будет
-              неограниченное количество попыток, но в рамках 2 часов и движения внутри живой очереди.</p>
+            <p class="variants__description">Проверь свои силы и навыки на 5 препятствиях Арены. У тебя будет неограниченное 
+              количество попыток, но в рамках 2 часов и движения внутри живой очереди.</p>
           </li>
           <li class="variants__item">
             <h3 class="variants__title">Фановый забег</h3>
-            <p class="variants__description">У тебя есть всего 6 минут (3 отрезка трассы по
-              2 минуты) и твоя воля к
-              победе, чтобы не опустить руки после неудачи!</p>
+            <p class="variants__description">У тебя есть всего 6 минут (3 отрезка трассы по 2 минуты) и твоя воля к победе, чтобы 
+              не опустить руки после неудачи!</p>
           </li>
           <li class="variants__item">
             <h3 class="variants__title">Индивидуальный чемпионат</h3>
@@ -81,8 +80,7 @@
           </li>
           <li class="variants__item">
             <h3 class="variants__title">Командный чемпионат</h3>
-            <p class="variants__description">Ты не сможешь подвести друзей &#8211; ведь победа будет зависеть от
-              каждого!</p>
+            <p class="variants__description">Ты не сможешь подвести друзей &#8211; ведь победа будет зависеть от каждого!</p>
             <p class="variants__description">Команды из 3-х участников соревнуются в формате эстафеты.</p>
           </li>
         </ul>
@@ -90,6 +88,9 @@
     </main>
     <div class="spacer-container"></div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="main.min.js"></script>
 
 </body>
 
