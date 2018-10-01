@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Новый масштабный спортивный проект "OCR"</title>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
@@ -10,63 +11,58 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__container">
-      <a class="instructor-icon page-header__link">
-        <span class="visually-hidden">Инструктор</span>
-        <svg class="page-header__icon" xmlns="http://www.w3.org/2000/svg" width="60" height="98" viewBox="0 0 65 96">
-          <g fill="none" fill-rule="evenodd">
-            <path stroke="#FFF" stroke-width="1.944" d="M16.611 22.998l.282 13.72 7.132 9.464 4.94 2.058h5.213l5.076-1.783 7.681-9.465.273-16.191" />
-            <path stroke="#FFF" stroke-width="1.944" d="M24.025 46.182v5.626l8.087 11.664 7.553-11.664V45.77" />
-            <path stroke="#FFF" stroke-width="1.944" d="M23.89 51.258l-18.527 5.08-5.35 6.448.823 31.002 62.417-.002.413-32.922-5.076-5.348-18.925-3.708M53.246 67.172v26.475M11.543 66.623v27.574M16.016 21.858L47.41 21.7l1.531-.904v-2.87l-1.601-1.509-31.277.068-1.509 1.784v2.128z" />
-            <path stroke="#FFF" stroke-width="1.944" d="M47.27 16.556s1.031-6.77-1.987-9.234c-3.018-2.464-9.603-4.848-9.603-4.848l.639 2.469-11.156-4.7.456 3.7L13.73 0s.457 14.315 2.47 16.37" />
-            <ellipse cx="44.826" cy="69.18" stroke="#FFF" stroke-width="1.215" rx="2.33" ry="2.143" />
-            <path fill="#FFF" fill-rule="nonzero" d="M21.72 64.244h2.531v7.703H21.72v-1.1l.221-2.43h-.109l-1.419 3.53H17.87v-7.703h2.542v1.101l-.221 2.43h.112z" />
-          </g>
-        </svg>
-      </a>
-      <a class="settings-icon page-header__link">
-        <span class="visually-hidden">Настройки</span>
-        <svg class="page-header__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-          <g fill="#FFF" fill-rule="nonzero">
-            <path d="M10.497 31.029C4.372 28.785 0 22.903 0 16 0 7.163 7.163 0 16 0c6.877 0 12.741 4.34 15.004 10.43-1.016 1.46-2.694 2.365-4.599 2.365-2.277 0-4.364-1.518-5.123-3.795-1.518.38-2.846.949-4.174 1.708.948 2.087.759 4.743-.949 6.451-1.708 1.708-4.364 1.897-6.451.949-.76 1.328-1.329 2.656-1.708 4.174 2.277.759 3.795 2.846 3.795 5.123a5.6 5.6 0 0 1-1.298 3.624z" />
-            <path d="M31.215 20.963a16.03 16.03 0 0 1-11.65 10.638 8.265 8.265 0 0 1-1.13-4.196c0-4.364 3.606-7.97 7.97-7.97 1.809 0 3.467.57 4.81 1.528z" />
-          </g>
-        </svg>
-      </a>
-    </div>
-  </header>
-
-  <main class="page-main layout-positioner">
-    <section class="description">
-      <h1 class="description__title">Что такое OCR?</h1>
-      <p class="description__text">&#171;OCR&#187; &#8212; это новый масштабный спортивный проект для любительской и
-        массовой
-        аудитории, реализуемый &#171;Минспортом&#187; совместно с медиагруппой &#171;Красный Квадрат&#187;</p>
-      <p class="description__text">Первое мероприятие пройдет с 4 по 5 августа в Москве &#8211; <br>в Парке Победы на
-        Поклонной
-        Горе</p>
-      <div class="quote">
-        <blockquote class="quote__text">&#171;OCR&#187; &#8212; это спортивная зона общей площадью более 2000 квадратных
-          метров и 12
-          конструкций с разнообразными препятствиями: прыжки на канате через бассейн с водой, подвесные рукоходы,
-          коварные
-          вращающиеся мостки и многие другие захватывающие препятствия. Общая высота конструкций составит около 6
-          метров, а средняя
-          высота установки препятствий &#8211; 4 метра.</blockquote>
-        <div class="quote__source quote__source--mickey">
-          <span class="quote__author-name">Микки Рурк</span>
-          <span class="quote__author-job">Министр</span>
+  <div class="content-container">
+    <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header_menu--left">
+          <a class="page-header__link">
+            <span class="visually-hidden">Инструктор</span>
+            <span class="instructor-icon"></span>
+          </a>
+        </div>
+        <div class="page-header_menu--right">
+          <a class="page-header__link">
+            <span class="visually-hidden">Настройки</span>
+            <span class="settings-icon"></span>
+          </a>
         </div>
       </div>
-      <p class="description__text">Участники стартуют попарно &#8211; специально для этого на платформах оборудованы 2
-        параллельные линии с одинаковыми препятствиями. Проходя трассу, участники перемещаются с платформы на
-        платформу, а в финале дистанции их ждет четырехметровая &#171;Рампа&#187; и всего две попытки, чтобы на нее
-        взобраться.</p>
-    </section>
-  </main>
-  <div class="spacer-container"></div>
-  
+    </header>
+
+    <main class="page-main layout-positioner">
+      <section class="description">
+        <h1 class="description__title">Что такое OCR?</h1>
+        <p class="description__text">&#171;OCR&#187; &#8212; это новый масштабный спортивный проект для любительской и
+          массовой
+          аудитории, реализуемый &#171;Минспортом&#187; совместно с медиагруппой &#171;Красный Квадрат&#187;</p>
+        <p class="description__text">Первое мероприятие пройдет с 4 по 5 августа в Москве &#8211; <br>в Парке Победы на
+          Поклонной
+          Горе</p>
+        <div class="quote">
+          <div class="quote__source quote__source--mickey">
+            <span class="quote__author-name">Микки Рурк</span>
+            <span class="quote__author-job">Министр</span>
+          </div>
+          <blockquote class="quote__text">&#171;OCR&#187; &#8212; это спортивная зона общей площадью более 2000
+            квадратных
+            метров и 12
+            конструкций с разнообразными препятствиями: прыжки на канате через бассейн с водой, подвесные рукоходы,
+            коварные
+            вращающиеся мостки и многие другие захватывающие препятствия. Общая высота конструкций составит около 6
+            метров, а средняя
+            высота установки препятствий &#8211; 4 метра.</blockquote>
+          
+        </div>
+        <p class="description__text">Участники стартуют попарно &#8211; специально для этого на платформах оборудованы
+          2
+          параллельные линии с одинаковыми препятствиями. Проходя трассу, участники перемещаются с платформы на
+          платформу, а в финале дистанции их ждет четырехметровая &#171;Рампа&#187; и всего две попытки, чтобы на нее
+          взобраться.</p>
+      </section>
+    </main>
+    <div class="spacer-container"></div>
+  </div>
+
 </body>
 
 </html>
